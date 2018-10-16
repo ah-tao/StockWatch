@@ -63,7 +63,7 @@ public class DBHandler extends SQLiteOpenHelper {
     public void deleteStock(String symbol) {
         Log.d(TAG, "deleteStock: Deleting Stock " + symbol);
 
-        int cnt = database.delete(TABLE_NAME, "SYMBOL = ?", new String[] { symbol });
+        int cnt = database.delete(TABLE_NAME, SYMBOL + " = ?", new String[] { symbol });
 
         Log.d(TAG, "deleteStock: " + cnt);
     }

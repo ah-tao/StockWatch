@@ -12,6 +12,7 @@ class Stock implements Serializable, Comparable<Stock> {
     private double changePercent;
 
     public Stock() {
+        this.symbol = "*";
     }
 
     public Stock(String symbol, String company) {

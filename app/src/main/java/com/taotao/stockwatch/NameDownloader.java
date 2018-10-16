@@ -39,8 +39,8 @@ public class NameDownloader extends AsyncTask<Void, Void, Void> {
         try {
             URL url = new URL(DATA_URL);
             HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-            Log.d(TAG, "doInBackground: " + connection.getResponseCode() + ", "
-                    + connection.getResponseMessage());
+            Log.d(TAG, "doInBackground: Response Code" + connection.getResponseCode()
+                    + ", " + connection.getResponseMessage());
 
             connection.setRequestMethod("GET");
 
